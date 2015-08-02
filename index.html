@@ -9,6 +9,11 @@
 
   <body ng-controller="MainController">
     <div>{{ error }}</div>
+    
+    <form ng-submit="search()">
+      <input type="search" required placeholder="name to serach" ng-model="username"/>
+      <input type="submit" value="Serach"/>
+    </form>
     <div>Name: {{user.name}}</div>
     <div>Company: {{user.company}}</div>
     <div>Email: {{user.email}}</div>
