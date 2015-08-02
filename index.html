@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html data-ng-app="NeoModule">
+
+  <head>
+    <script data-require="angular.js@*" data-semver="" src="https://code.angularjs.org/1.4.3/angular.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body ng-controller="MainController">
+    <div>{{ error }}</div>
+    <div>Name: {{user.name}}</div>
+    <div>Company: {{user.company}}</div>
+    <div>Email: {{user.email}}</div>
+     <div>Location: {{user.location}}</div>
+    <img ng-src="{{user.avatar_url}}" title="{{user.name}}"/>
+  </body>
+
+</html>
