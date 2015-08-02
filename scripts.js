@@ -12,8 +12,10 @@
     var onError = function(reason) {
       $scope.error = "Can't Display now";
     };
-
-    $http.get("https://api.github.com/users/prakash-raj").then(prakashDetails, onError);
+    $scope.search = function() {
+       $http.get("https://api.github.com/users/"+ $scope.username).then(prakashDetails, onError);
+    };
+   $scope.username="prakash-raj";
 
   };
   app.controller("MainController", ["$scope", "$http", MainController]);
